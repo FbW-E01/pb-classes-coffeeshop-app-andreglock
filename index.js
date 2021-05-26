@@ -8,7 +8,7 @@ class CoffeeShop {
 		for (let i = 0; i < this.menu.length; i++) {
 			if (this.menu[i].item === itemToAdd) {
 				this.orders.push(this.menu[i].item);
-				break;
+				return 'Order added';
 			} if (i === this.menu.length - 1) {
 				return "This item is currently unavailable!";
 			}
